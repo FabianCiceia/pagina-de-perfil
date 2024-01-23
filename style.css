@@ -1,0 +1,212 @@
+body{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+/******* Estilos para el Nav *****/
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-title{
+    padding: 0px 10px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0px 15px;
+    list-style-type: none;
+    
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #2B78E4;
+    color: #fff;
+    border: solid #000;
+    box-shadow: 4px 4px  #000;
+}
+
+/****** Estilos para el Body ******/
+.body{
+    display: flex;
+    
+}
+
+.content{
+    flex: 5;
+}
+
+/****** Estilo para la tarjeta ***/
+
+.background{
+    background-color: #17A2B8;
+    height: 70px;
+}
+.tarjet{
+
+    padding: 20px;
+    position: relative;
+    margin: 30px;
+
+}
+
+.container{
+    position: relative;
+    border: solid #D2D2D2;
+    background-color: #FFFFFF;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+.container *{
+    padding: 3px;
+    margin: 0;
+}
+.container-data{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.user{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.map-marker{
+    height: 17px;
+    
+}
+.gear{
+    height: 12px;
+    position: relative;
+    top: 5px;
+}
+
+
+/*** Estilo para education *****/
+.education{
+    border:  solid #D2D2D2;
+}
+.education-title{
+    background-color: #333333;
+    padding: 1px 20px;
+    margin: 0;
+    color: #fff;
+
+}
+.education-body{
+    padding: 0px 10px;
+}
+
+
+/**** Estilo para la barra lateral ****/
+
+.sidebar{
+    flex: 3;
+}
+
+.sidebar-requests{
+    border:  solid #D2D2D2;
+    margin: 30px;
+}
+
+.sidebar-requests-title{
+    background-color: #333333;
+    padding-left: 10px;
+    color: #fff;
+}
+.sidebar-requests-title p{
+    display: inline-block;
+    text-align: center;
+    background-color: #e4e4e4;
+    padding-top: 5px;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    color: #000;
+}
+
+.sidebar-requests-tarjet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+}
+.sidebar-requests-tarjet-user{
+    display: flex;
+    align-items: center;
+}
+.sidebar-requests-tarjet-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.sidebar-requests-tarjet-user h1{
+    font-size: large;
+}
+.sidebar-requests-tarjet-button button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/****** Estilo para sidebar-connections *****/
+
+.sidebar-connections{
+    border:  solid #D2D2D2;
+    margin: 30px;
+}
+
+
+.sidebar-connections-title{
+    background-color: #333333;
+    padding-left: 10px;
+    color: #fff;
+}
+.sidebar-connections-title p{
+    display: inline-block;
+    text-align: center;
+    background-color: #e4e4e4;
+    padding-top: 5px;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    color: #000;
+}
+
+.sidebar-connections-tarjet-user{
+    display: flex;
+    align-items: center;
+}
+.sidebar-connections-tarjet-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.sidebar-connections-tarjet-user h1{
+    font-size: large;
+}
+.sidebar-connections-more{
+    border-top: solid #D2D2D2;
+    font-size:25px;
+    padding: 10px;
+}
