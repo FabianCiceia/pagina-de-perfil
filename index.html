@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,16 +20,15 @@
     <div class="body">
         <div class="content">
             <div class="tarjet">
-                
                 <div class="container">
                     <div class="background"></div>
                     <div class="container-data">
-                        <img src="Tarjeta de usuario/images/jane-m.jpg" class="user">
-                        <h1>Jane Doe</h1>
+                        <img src="images/jane-m.jpg" class="user">
+                        <h1 id="nick" >Jane Doe</h1>
                         <h2><img src="icons/map-marker.png" class="map-marker"> Seattle</h2>
                         <p>Developer | Engineer | Problem Solver</p>
                         <p>Master of shadows and the Internet!</p>
-                        <a href="#"><img src="icons/gear.png" class="gear">edit profile</a>
+                        <a onclick="editnick()" href="#" ><img src="icons/gear.png" class="gear">edit profile</a>
                     </div>
                 </div>
                 <div class="education">
@@ -44,57 +44,58 @@
         </div>
         <div class="sidebar">
             <div class="sidebar-requests">
-                <div class="sidebar-requests-title"> <p>2</p> Conection Requests</div>
-                <div class="sidebar-requests-tarjet">
+                <div class="sidebar-requests-title"> <p id="requestsconection">2</p> Conection Requests</div>
+                <div id="Todd-E" class="sidebar-requests-tarjet">
                     <div class="sidebar-requests-tarjet-user">
-                        <img src="Tarjeta de usuario/images/todd-s.jpg" alt="">
+                        <img src="images/todd-s.jpg" alt="">
                         <h1>Todd E.</h1>
                     </div>
                     <div class="sidebar-requests-tarjet-button">
-                        <img src="icons/accept-circle.png" class="button" alt="">
-                        <img src="icons/close-circle.png" class="button" alt="">
+                        <img src="icons/accept-circle.png" class="button" alt="" onclick="requestsaccept('Todd-E','images/todd-s.jpg','Todd E')">
+                        <img src="icons/close-circle.png" class="button" alt="" onclick="requestsclose('Todd-E')">
                     </div>
                 </div>
 
-                <div class="sidebar-requests-tarjet">
+                <div id="Phil-K" class="sidebar-requests-tarjet">
                     <div class="sidebar-requests-tarjet-user">
-                        <img src="Tarjeta de usuario/images/phil-s.jpg" alt="">
+                        <img src="images/phil-s.jpg" alt="">
                         <h1>Phil K</h1>
                     </div>
                     <div class="sidebar-requests-tarjet-button">
-                        <img src="icons/accept-circle.png" class="button" alt="">
-                        <img src="icons/close-circle.png" class="button" alt="">
+                        <img src="icons/accept-circle.png" class="button" alt="" onclick="requestsaccept('Phil-K','images/phil-s.jpg','Phil K')">
+                        <img src="icons/close-circle.png" class="button" alt="" onclick="requestsclose('Phil-K')">
                     </div>
                 </div>
             </div>
             <div class="sidebar-connections">
-                <div class="sidebar-connections-title"> <p>500+</p> Your conections</div>
-
-                <div class="sidebar-connections-tarjet">
-                    <div class="sidebar-connections-tarjet-user">
-                        <img src="Tarjeta de usuario/images/adrien-s.jpg" alt="">
-                        <h1>Andrien D</h1>
+                <div class="sidebar-connections-title"> <p id="conections">4</p> Your conections</div>
+                <div id="listConnections">
+                    <div class="sidebar-connections-tarjet">
+                        <div class="sidebar-connections-tarjet-user">
+                            <img src="images/adrien-s.jpg" alt="">
+                            <h1>Andrien D</h1>
+                        </div>
                     </div>
-                </div>
 
-                <div class="sidebar-connections-tarjet">
-                    <div class="sidebar-connections-tarjet-user">
-                        <img src="Tarjeta de usuario/images/anne-s.jpg" alt="">
-                        <h1>Anne J</h1>
+                    <div class="sidebar-connections-tarjet">
+                        <div class="sidebar-connections-tarjet-user">
+                            <img src="images/anne-s.jpg" alt="">
+                            <h1>Anne J</h1>
+                        </div>
                     </div>
-                </div>
 
-                <div class="sidebar-connections-tarjet">
-                    <div class="sidebar-connections-tarjet-user">
-                        <img src="Tarjeta de usuario/images/alayne-s.jpg" alt="">
-                        <h1>Alayne T</h1>
+                    <div class="sidebar-connections-tarjet">
+                        <div class="sidebar-connections-tarjet-user">
+                            <img src="images/alayne-s.jpg" alt="">
+                            <h1>Alayne T</h1>
+                        </div>
                     </div>
-                </div>
 
-                <div class="sidebar-connections-tarjet">
-                    <div class="sidebar-connections-tarjet-user">
-                        <img src="Tarjeta de usuario/images/arry-s.jpg" alt="">
-                        <h1>Arry J</h1>
+                    <div class="sidebar-connections-tarjet">
+                        <div class="sidebar-connections-tarjet-user">
+                            <img src="images/arry-s.jpg" alt="">
+                            <h1>Arry J</h1>
+                        </div>
                     </div>
                 </div>
                 <div class="sidebar-connections-more">
@@ -108,3 +109,4 @@
     </div>
 </body>
 </html>
+}
