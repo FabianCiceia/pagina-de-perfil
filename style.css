@@ -161,14 +161,11 @@ body{
 .sidebar-requests-tarjet-user h1{
     font-size: large;
 }
-.sidebar-requests-tarjet-button button{
+.sidebar-requests-tarjet-button .button{
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    border: #999999;
-    background-color: #999999;
-    color: #fff;
-    text-align: center;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
 }
 
 /****** Estilo para sidebar-connections *****/
